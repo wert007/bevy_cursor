@@ -86,7 +86,7 @@ fn setup(mut commands: Commands) {
         commands.spawn((
             Camera2d,
             Transform::from_xyz(1000.0, 0.0, 0.0),
-            Camera { ..default() },
+            Camera::default(),
             RenderTarget::Window(WindowRef::Entity(secondary_window_ref)),
             Name::new("The left one"),
             LeftCamera,
